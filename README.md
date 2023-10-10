@@ -22,6 +22,8 @@ The training will try to use the GPU if its avaliable ie you have the right driv
 
 test.py contains the code to take in an image and return the latex using the provided ai model
 
+network.py will be added once the website is complete
+
 
 
 
