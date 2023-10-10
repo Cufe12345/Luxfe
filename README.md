@@ -1,34 +1,27 @@
-Test This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The website is still in development will update the read me when its complete
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Backend
+TrainData folder contains all the images which were used in the training of the ai models
+Testing Images contains images to test the accuracy of the models after training
+# Scripts
+training.py contains the code used to train the ai models. training.py [1st argument the model you want to train] [2nd argument the name of output file] [3rd argument number of epsilons] 
+eg: training.py -M TestModel 30
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+[options]
+-M = Maths model
+-D = Digits model
+-L = Letters model
+-E = Extra's model
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[Extra info]
+The training will try to use the GPU if its avaliable ie you have the right drivers installed and GPU is supported by tensorflow
 
-## Learn More
+test.py contains the code to take in an image and return the latex using the provided ai model
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
