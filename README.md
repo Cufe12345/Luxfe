@@ -1,4 +1,5 @@
-
+# Luxfe
+A website which converts Handwritten Latex into Latex code, website is programmed in react.js with the backend and ai model programmed in python
 
 ## Website
 
